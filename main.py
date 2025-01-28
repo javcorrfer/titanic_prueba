@@ -11,7 +11,7 @@ def main():
 
     ciudades = ["Cherbourg", "Southampton", "Queenstown"]
     st.text("En qué ciudad ha embarcado?")
-    ciudad = st.selectbox(label="Ciudad de embarque", options=ciudades, index=[])
+    ciudad = st.selectbox(label="Ciudad de embarque", options=ciudades, index=None)
 
     st.write(f"Ciudad en la que ha embarcado: {ciudad}")
 
