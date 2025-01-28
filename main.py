@@ -9,8 +9,9 @@ def main():
 
     st.title("Prueba Modelo ML")
 
+    ciudades = ["Cherbourg", "Southampton", "Queenstown"]
     st.text("En qué ciudad ha embarcado?")
-    ciudad = st.text_input(label="Lugar de embarque", value=None, key="str")
+    ciudad = st.selectbox(label="Ciudad de embarque", options=ciudades, index=[])
 
     st.write(f"Ciudad en la que ha embarcado: {ciudad}")
 
