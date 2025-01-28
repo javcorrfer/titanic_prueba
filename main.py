@@ -13,8 +13,8 @@ def main():
     st.text("En qué ciudad ha embarcado?")
     ciudad = st.selectbox(label="Ciudad de embarque", options=ciudades, index=None)
 
-    st.write(f"Ciudad en la que ha embarcado: {ciudad}")
-
+    if ciudad != None:
+        st.write(f"Ciudad en la que ha embarcado: {ciudad}")
 
 
 if __name__ == "__main__":
